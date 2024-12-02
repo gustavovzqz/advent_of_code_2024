@@ -4,5 +4,4 @@ lib: [
 ]
 bin: [
   "_build/install/default/bin/day_1"
-  "_build/install/default/bin/teste"
 ]
