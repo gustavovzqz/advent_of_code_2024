@@ -16,6 +16,12 @@ let rec list_to_string list =
   | [] -> ""
   | h :: t -> string_of_int h ^ " " ^ list_to_string t
 
+(*
+  Tem uma forma bem mais simples de fazer,
+  zipando a lista em pares (a, b) e vendo se todos os pares são decrescentes / crescentes.
+  depois basta verificar se a remoção de algum torna a lista da forma acima (caso não seja)
+*)
+
 let rec increasing l =
   match l with
   | h1 :: h2 :: t -> h2 - h1 <= 3 && h2 - h1 > 0 && increasing (h2 :: t)
