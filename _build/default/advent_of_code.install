@@ -1,7 +1,0 @@
-lib: [
-  "_build/install/default/lib/advent_of_code/META"
-  "_build/install/default/lib/advent_of_code/dune-package"
-]
-bin: [
-  "_build/install/default/bin/day_1"
-]
